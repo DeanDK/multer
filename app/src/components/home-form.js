@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 import classNames from 'classnames';
 import { upload } from '../helpers/upload';
+import PropTypes from 'prop-types';
 
-export default class HomeForm extends Component {
+class HomeForm extends Component {
   constructor(props) {
     super(props);
 
@@ -147,6 +148,10 @@ export default class HomeForm extends Component {
     event.preventDefault();
     this._formValidation(['from', 'to', 'files'], isValid => {
       if (isValid) {
+        const data = this.state.form;
+        if (this.props.onUploadBegin) {
+          this.props.onUploadBegin(data);
+        }
         upload(this.state.form, event => {});
       }
     });
@@ -276,3 +281,9 @@ export default class HomeForm extends Component {
     );
   }
 }
+
+HomeForm.propTypes = {
+  onUploadBegin: PropTypes.func
+};
+
+export default HomeForm;
