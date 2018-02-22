@@ -204,7 +204,9 @@ export default class HomeForm extends Component {
                     type="file"
                     multiple={true}
                   />
-                  <span className={'app-upload-icon'} />
+                  <span className={'app-upload-icon'}>
+                    <i className={'icon-picture-streamline'} />
+                  </span>
                   <span className={'app-upload-description'}>
                     {files.length ? 'Add more ' : 'Drag and drop your files'}
                   </span>
