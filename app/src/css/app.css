@@ -343,4 +343,49 @@ body {
 .error {
   color: #d0152e; }
 
+.app-home-uploading-icon {
+  display: block;
+  text-align: center; }
+  .app-home-uploading-icon i {
+    font-size: 60px;
+    display: inline-block;
+    border: 1px solid #96a3bb;
+    width: 100px;
+    heigth: 100px;
+    border-radius: 50%;
+    line-height: 100px; }
+  .app-home-uploading-icon h2 {
+    margin: 20px 0 0 0;
+    padding: 0;
+    font-size: 17px; }
+
+.app-upload-files-total {
+  margin-top: 20px; }
+
+.app-upload-stats {
+  display: flex;
+  flex-direction: row; }
+  .app-upload-stats .app-upload-stats-left {
+    flex-grow: 1; }
+
+.app-progress {
+  background: #f1f8fe;
+  border: 1px solid #b2d8f8;
+  height: 15px;
+  line-height: 15px;
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0 10px 0;
+  position: relative;
+  overflow: hidden; }
+  .app-progress .app-progress-bar {
+    display: block;
+    position: absolute;
+    width: 20%;
+    left: 0;
+    top: 0px;
+    height: 15px;
+    line-height: 15px;
+    background: #681000; }
+
 /*# sourceMappingURL=app.css.map */

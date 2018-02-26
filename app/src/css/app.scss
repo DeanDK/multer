@@ -5,7 +5,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: rgb(104, 16, 0);
+  background-color: $primary-color;
   color: $body-color;
   font-size: 11px;
 }
@@ -176,7 +176,7 @@ body {
     display: block;
     font-weight: 700;
     color: white;
-    background-color: rgb(104, 16, 0);
+    background-color: $primary-color;
     border: 1px solid;
     -webkit-border-radius: 3px;
     padding: 7px 15px;
@@ -212,4 +212,58 @@ body {
 
 .error {
   color: $danger-color;
+}
+
+.app-home-uploading-icon {
+  display: block;
+  text-align: center;
+  i {
+    font-size: 60px;
+    display: inline-block;
+    border: 1px solid $body-color;
+    width: 100px;
+    heigth: 100px;
+    border-radius: 50%;
+    line-height: 100px;
+  }
+  h2 {
+    margin: 20px 0 0 0;
+    padding: 0;
+    font-size: 17px;
+  }
+}
+
+.app-upload-files-total {
+  margin-top: 20px;
+}
+.app-upload-stats {
+  display: flex;
+  flex-direction: row;
+  .app-upload-stats-left {
+    flex-grow: 1;
+  }
+  .app-upload-stats-right {
+  }
+}
+
+.app-progress {
+  background: rgba(241, 248, 254, 1);
+  border: 1px solid rgba(178, 216, 248, 1);
+  height: 15px;
+  line-height: 15px;
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0 10px 0;
+  position: relative;
+  overflow: hidden;
+  .app-progress-bar {
+    display: block;
+    position: absolute;
+    width: 20%;
+    left: 0;
+    top: 0px;
+    height: 15px;
+    line-height: 15px;
+    background: rgb(104, 16, 0);
+  }
 }

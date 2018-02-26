@@ -8,7 +8,7 @@ class Home extends Component {
     super(props);
 
     this.state = {
-      componentName: 'HomeForm',
+      componentName: 'HomeUploading',
       data: null,
       uploadEvent: null
     };
