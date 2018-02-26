@@ -244,7 +244,7 @@ body {
     background: #f3f7ff; }
     .app-card .app-card-header .app-card-header-inner {
       padding: 20px; }
-  .app-card .app-card-content .app-card-content-inner {
+  .app-card.app-card-uploading .app-card-content .app-card-content-inner {
     padding: 20px; }
 
 .app-file-select-zone {
@@ -387,5 +387,8 @@ body {
     height: 15px;
     line-height: 15px;
     background: #681000; }
+
+.app-upload-cancel-button {
+  margin-top: 50px; }
 
 /*# sourceMappingURL=app.css.map */

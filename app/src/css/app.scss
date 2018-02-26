@@ -90,9 +90,11 @@ body {
       padding: 20px;
     }
   }
-  .app-card-content {
-    .app-card-content-inner {
-      padding: 20px;
+  &.app-card-uploading {
+    .app-card-content {
+      .app-card-content-inner {
+        padding: 20px;
+      }
     }
   }
 }
@@ -266,4 +268,8 @@ body {
     line-height: 15px;
     background: rgb(104, 16, 0);
   }
+}
+
+.app-upload-cancel-button {
+  margin-top: 50px;
 }
